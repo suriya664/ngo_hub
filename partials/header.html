@@ -1,0 +1,50 @@
+<header>
+    <div class="header-container">
+        <a href="index.html" class="logo" id="headerLogo">
+            <img src="" alt="NGO Logo" id="logoImg" style="height: 40px;" data-src="assets/img/logo.svg">
+        </a>
+        <nav>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html">About <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                    </ul>
+                </li>
+                <li><a href="campaigns.html">Campaigns</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html" class="btn-register-nav">Register</a></li>
+                <li><a href="login.html" class="btn-login-nav">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (mobileMenuToggle && navMenu) {
+            mobileMenuToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                if (icon) {
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-times');
+                }
+            });
+        }
+    });
+</script>
+

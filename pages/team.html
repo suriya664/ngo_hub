@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - NGO Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .team-section {
+            padding: 8rem 2rem 5rem;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .team-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+        .team-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .team-info {
+            padding: 1.5rem;
+        }
+        .team-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--secondary-blue);
+            margin-bottom: 0.5rem;
+        }
+        .team-role {
+            color: var(--primary-orange);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        .team-bio {
+            color: var(--gray);
+            font-size: 0.9rem;
+            text-align: left;
+        }
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .team-social a {
+            width: 35px;
+            height: 35px;
+            background: var(--light-bg);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-orange);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo" id="headerLogo">
+                <img src="../assets/img/logo.svg" alt="NGO Logo" style="height: 40px;">
+            </a>
+            <nav>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="about.html">About <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">Our Story</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="partners.html">Partners</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="campaigns.html">Campaigns</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="register.html" class="btn-register-nav">Register</a></li>
+                    <li><a href="login.html" class="btn-login-nav">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero__inner">
+            <h1 class="page-hero__title">Meet Our Team</h1>
+            <p class="page-hero__subtitle">The dedicated leaders, strategists, and field champions powering our programs.</p>
+            <div class="page-hero__breadcrumb">
+                <a href="../index.html">Home</a>
+                <span>/</span>
+                <span>Our Team</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <h1 class="section-title">Our Team</h1>
+            <p style="text-align: center; color: var(--gray); margin-bottom: 3rem;">Meet the dedicated people behind our mission</p>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="https://i.pravatar.cc/400?img=1" alt="Team Member" class="team-image">
+                    <div class="team-info">
+                        <div class="team-name">Dr. Priya Sharma</div>
+                        <div class="team-role">Founder & CEO</div>
+                        <p class="team-bio">With over 20 years of experience in social work, Dr. Sharma leads our organization with passion and dedication.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="https://i.pravatar.cc/400?img=12" alt="Team Member" class="team-image">
+                    <div class="team-info">
+                        <div class="team-name">Rajesh Kumar</div>
+                        <div class="team-role">Program Director</div>
+                        <p class="team-bio">Rajesh oversees our education and healthcare programs, ensuring effective implementation across all regions.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="https://i.pravatar.cc/400?img=9" alt="Team Member" class="team-image">
+                    <div class="team-info">
+                        <div class="team-name">Sunita Devi</div>
+                        <div class="team-role">Women Empowerment Lead</div>
+                        <p class="team-bio">Sunita manages our women empowerment initiatives, helping hundreds of women become financially independent.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="https://i.pravatar.cc/400?img=20" alt="Team Member" class="team-image">
+                    <div class="team-info">
+                        <div class="team-name">Amit Patel</div>
+                        <div class="team-role">Volunteer Coordinator</div>
+                        <p class="team-bio">Amit manages our volunteer network and coordinates community outreach programs.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-heading">About Us</h3>
+                    <p style="color: rgba(255,255,255,0.7); text-align: left; margin-bottom: 1rem;">
+                        Empowering communities and transforming lives through education, healthcare, and sustainable development initiatives across India.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="campaigns.html">Campaigns</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-heading">Programs</h3>
+                    <ul class="footer-links">
+                        <li><a href="campaigns.html">Education</a></li>
+                        <li><a href="campaigns.html">Healthcare</a></li>
+                        <li><a href="campaigns.html">Women Empowerment</a></li>
+                        <li><a href="campaigns.html">Environmental</a></li>
+                        <li><a href="campaigns.html">Rural Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contact</h3>
+                    <ul class="footer-links">
+                        <li style="color: rgba(255,255,255,0.7); margin-bottom: 0.75rem;">
+                            <i class="fas fa-map-marker-alt"></i> 123 NGO Street, Mumbai, Maharashtra 400001
+                        </li>
+                        <li style="color: rgba(255,255,255,0.7); margin-bottom: 0.75rem;">
+                            <i class="fas fa-phone"></i> +91 98765 43210
+                        </li>
+                        <li style="color: rgba(255,255,255,0.7); margin-bottom: 0.75rem;">
+                            <i class="fas fa-envelope"></i> info@ngotemplate.org
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 NGO Template. All rights reserved. | <a href="privacy-policy.html" style="color: rgba(255,255,255,0.7);">Privacy Policy</a> | <a href="terms.html" style="color: rgba(255,255,255,0.7);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modals-placeholder"></div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    
+</body>
+</html>
+

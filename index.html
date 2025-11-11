@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join us in making a difference. Support our campaigns and help transform lives across India.">
+    <meta name="keywords" content="NGO, charity, donation, volunteer, India, social work">
+    <title>Home - NGO Template | Empowering Communities</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo" id="headerLogo">
+                <img src="assets/img/logo.svg" alt="NGO Logo" style="height: 40px;">
+            </a>
+            <nav>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="pages/about.html">About <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/about.html">Our Story</a></li>
+                            <li><a href="pages/team.html">Our Team</a></li>
+                            <li><a href="pages/partners.html">Partners</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pages/campaigns.html">Campaigns</a></li>
+                    <li><a href="pages/events.html">Events</a></li>
+                    <li><a href="pages/volunteer.html">Volunteer</a></li>
+                    <li><a href="pages/donate.html">Donate</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li><a href="pages/register.html" class="btn-register-nav">Register</a></li>
+                    <li><a href="pages/login.html" class="btn-login-nav">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <span class="hero-badge">Making a Difference Since 2010</span>
+            <h1 class="hero-title">Empowering Communities<br>Transforming Lives</h1>
+            <p class="hero-description">Join us in creating lasting change through education, healthcare, and sustainable development initiatives across India.</p>
+            <div class="hero-buttons">
+                <a href="pages/donate.html" class="btn-primary">Donate Now</a>
+                <a href="pages/volunteer.html" class="btn-outline">Become a Volunteer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Stats -->
+    <div class="container">
+        <div class="hero-stats">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="50000" data-suffix="+">0</span>
+                    <span class="stat-label">Lives Impacted</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="150" data-suffix="+">0</span>
+                    <span class="stat-label">Active Campaigns</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="2500" data-suffix="+">0</span>
+                    <span class="stat-label">Volunteers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5" data-suffix="+">0</span>
+                    <span class="stat-label">Crore Donated</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="mission-container">
+            <div class="mission-content">
+                <h2>Our Mission</h2>
+                <p>Building a better tomorrow through compassionate action and sustainable development.</p>
+                <p>We are dedicated to empowering underprivileged communities across India by providing access to education, healthcare, and livelihood opportunities. Our holistic approach addresses root causes of poverty and inequality.</p>
+                <ul class="mission-list">
+                    <li>Quality education for every child</li>
+                    <li>Accessible healthcare in rural areas</li>
+                    <li>Women empowerment programs</li>
+                    <li>Environmental sustainability</li>
+                </ul>
+                <a href="pages/about.html" class="btn-primary" style="margin-top: 2rem;">Learn More About Us</a>
+            </div>
+            <div class="mission-image-wrapper">
+                <img src="https://images.pexels.com/photos/8617738/pexels-photo-8617738.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Our Mission" class="mission-image">
+                <div class="mission-badge">
+                    <span class="mission-badge-number">15+</span>
+                    <span class="mission-badge-text">Years of Service</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Campaigns Section -->
+    <section class="campaigns-section">
+        <div class="campaigns-container">
+            <h2 class="section-title">Active Campaigns</h2>
+            <p style="text-align: center; color: var(--gray); margin-bottom: 3rem;">Support our ongoing initiatives and make an immediate impact</p>
+            
+            <div class="campaigns-grid">
+                <!-- Campaign 1: Help Campaign -->
+                <div class="campaign-card">
+                    <img src="https://images.pexels.com/photos/8422087/pexels-photo-8422087.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Help Campaign" class="campaign-image">
+                    <div class="campaign-content">
+                        <h3 class="campaign-title">Help Campaign</h3>
+                        <p style="color: var(--gray); margin-bottom: 0.5rem; font-size: 0.875rem;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--primary-orange);"></i> Malaysia
+                        </p>
+                        <p class="campaign-description">Free check for unprivileged children. Join our volunteer program and make a difference in their lives.</p>
+                        
+                        <div class="progress-wrapper">
+                            <div class="progress-info">
+                                <span>₹ 12,45,000 raised</span>
+                                <span>₹ 20,00,000</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" data-width="62%" style="width: 62%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="campaign-stats">
+                            <span><i class="fas fa-users"></i> 245 Donors</span>
+                            <span><i class="fas fa-calendar"></i> 18 days left</span>
+                        </div>
+                        
+                        <a href="pages/campaign-details.html" class="btn-primary" style="width: 100%; text-align: center; margin-top: auto;">Support Campaign</a>
+                    </div>
+                </div>
+
+                <!-- Campaign 2: Awareness Drive -->
+                <div class="campaign-card">
+                    <img src="https://images.pexels.com/photos/7176325/pexels-photo-7176325.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Awareness Drive" class="campaign-image">
+                    <div class="campaign-content">
+                        <h3 class="campaign-title">Awareness Drive</h3>
+                        <p style="color: var(--gray); margin-bottom: 0.5rem; font-size: 0.875rem;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--primary-orange);"></i> Malaysia
+                        </p>
+                        <p class="campaign-description">Spread awareness about important educational issues in rural areas. Help us reach more communities.</p>
+                        
+                        <div class="progress-wrapper">
+                            <div class="progress-info">
+                                <span>₹ 18,75,000 raised</span>
+                                <span>₹ 25,00,000</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" data-width="75%" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="campaign-stats">
+                            <span><i class="fas fa-users"></i> 380 Donors</span>
+                            <span><i class="fas fa-calendar"></i> 25 days left</span>
+                        </div>
+                        
+                        <a href="pages/campaign-details.html" class="btn-primary" style="width: 100%; text-align: center; margin-top: auto;">Support Campaign</a>
+                    </div>
+                </div>
+
+                <!-- Campaign 3: Empowerment Workshop -->
+                <div class="campaign-card">
+                    <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Empowerment Workshop" class="campaign-image">
+                    <div class="campaign-content">
+                        <h3 class="campaign-title">Empowerment Workshop</h3>
+                        <p style="color: var(--gray); margin-bottom: 0.5rem; font-size: 0.875rem;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--primary-orange);"></i> Delhi
+                        </p>
+                        <p class="campaign-description">Skills workshop for entrepreneurs. Empower individuals with the knowledge and tools to start their own businesses.</p>
+                        
+                        <div class="progress-wrapper">
+                            <div class="progress-info">
+                                <span>₹ 8,50,000 raised</span>
+                                <span>₹ 15,00,000</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" data-width="57%" style="width: 57%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="campaign-stats">
+                            <span><i class="fas fa-users"></i> 192 Donors</span>
+                            <span><i class="fas fa-calendar"></i> 30 days left</span>
+                        </div>
+                        
+                        <a href="pages/campaign-details.html" class="btn-primary" style="width: 100%; text-align: center; margin-top: auto;">Support Campaign</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="pages/campaigns.html" class="btn-view-all">View All Campaigns</a>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section">
+        <div class="how-it-works-container">
+            <h2 class="section-title">How You Can Help</h2>
+            <p style="text-align: center; color: var(--gray); margin-bottom: 3rem;">Making a difference is simple with these easy steps</p>
+            
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <div class="step-card">
+                    <div class="step-icon-container">
+                        <i class="fas fa-search" style="font-size: 2rem; color: var(--primary-orange);"></i>
+                    </div>
+                    <div class="step-number">1</div>
+                    <h4 class="step-title">Choose a Cause</h4>
+                    <p class="step-description">Browse our campaigns and find a cause that resonates with you.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-card">
+                    <div class="step-icon-container">
+                        <i class="fas fa-hand-holding-usd" style="font-size: 2rem; color: var(--primary-orange);"></i>
+                    </div>
+                    <div class="step-number">2</div>
+                    <h4 class="step-title">Make a Donation</h4>
+                    <p class="step-description">Contribute any amount through our secure payment gateway.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card">
+                    <div class="step-icon-container">
+                        <i class="fas fa-receipt" style="font-size: 2rem; color: var(--primary-orange);"></i>
+                    </div>
+                    <div class="step-number">3</div>
+                    <h4 class="step-title">Get Tax Receipt</h4>
+                    <p class="step-description">Receive instant tax-deductible receipt via email.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step-card">
+                    <div class="step-icon-container">
+                        <i class="fas fa-chart-line" style="font-size: 2rem; color: var(--primary-orange);"></i>
+                    </div>
+                    <div class="step-number">4</div>
+                    <h4 class="step-title">Track Impact</h4>
+                    <p class="step-description">See how your contribution is making a real difference.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <h2 class="section-title">Stories of Hope</h2>
+            <p style="text-align: center; color: var(--gray); margin-bottom: 3rem;">Real stories from people we've helped</p>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">"Thanks to the education program, my daughter is now the first in our family to go to college. This has changed our entire future."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=5" alt="Priya Sharma" class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Priya Sharma</div>
+                            <div class="testimonial-role">Mumbai, Maharashtra</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">"The mobile health clinic saved my mother's life. We had no access to doctors in our village before this program started."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="Rajesh Kumar" class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Rajesh Kumar</div>
+                            <div class="testimonial-role">Bhagalpur, Bihar</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">"After completing the skill training, I started my own tailoring business. Now I can support my family independently."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=9" alt="Sunita Devi" class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Sunita Devi</div>
+                            <div class="testimonial-role">Jaipur, Rajasthan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="pages/impact.html" class="btn-view-all">Read More Stories</a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Make a Difference?</h2>
+                <p class="cta-description">Your contribution, no matter how small, can transform lives. Join thousands of supporters who are creating lasting change.</p>
+            </div>
+            <a href="pages/donate.html" class="cta-button">Donate Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-heading">About Us</h3>
+                    <p style="color: rgba(255,255,255,0.7); text-align: left; margin-bottom: 1rem;">
+                        Empowering communities and transforming lives through education, healthcare, and sustainable development initiatives across India.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/campaigns.html">Campaigns</a></li>
+                        <li><a href="pages/events.html">Events</a></li>
+                        <li><a href="pages/volunteer.html">Volunteer</a></li>
+                        <li><a href="pages/donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-heading">Programs</h3>
+                    <ul class="footer-links">
+                        <li><a href="pages/campaigns.html">Education</a></li>
+                        <li><a href="pages/campaigns.html">Healthcare</a></li>
+                        <li><a href="pages/campaigns.html">Women Empowerment</a></li>
+                        <li><a href="pages/campaigns.html">Environmental</a></li>
+                        <li><a href="pages/campaigns.html">Rural Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contact</h3>
+                    <ul class="footer-links">
+                        <li style="color: rgba(255,255,255,0.7); margin-bottom: 0.75rem;">
+                            <i class="fas fa-map-marker-alt"></i> 123 NGO Street, Mumbai, Maharashtra 400001
+                        </li>
+                        <li style="color: rgba(255,255,255,0.7); margin-bottom: 0.75rem;">
+                            <i class="fas fa-phone"></i> +91 98765 43210
+                        </li>
+                        <li style="color: rgba(255,255,255,0.7); margin-bottom: 0.75rem;">
+                            <i class="fas fa-envelope"></i> info@ngotemplate.org
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 NGO Template. All rights reserved. | <a href="pages/privacy-policy.html" style="color: rgba(255,255,255,0.7);">Privacy Policy</a> | <a href="pages/terms.html" style="color: rgba(255,255,255,0.7);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals Placeholder -->
+    <div id="modals-placeholder"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const navMenu = document.getElementById('navMenu');
+            
+            if (mobileMenuToggle && navMenu) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    const icon = mobileMenuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+            }
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (navMenu && mobileMenuToggle) {
+                    if (!navMenu.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
+                        navMenu.classList.remove('active');
+                        const icon = mobileMenuToggle.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
